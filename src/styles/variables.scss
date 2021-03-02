@@ -1,0 +1,51 @@
+//colors
+
+$color-red: #f65261;
+$color-light-grey: #555555;
+$color-grey: #424242;
+$color-dark-grey: #232323;
+$color-white: #ffffff;
+
+//media
+
+@mixin screen-mobile-plus-and-smaller {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin screen-tablet-portrait-and-smaller {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin screen-tablet-landscape-and-smaller {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin screen-mobile-plus-and-bigger {
+  @media only screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin screen-tablet-portrait-and-bigger {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin screen-tablet-landscape-and-bigger {
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin screen-laptop-and-bigger {
+  @media only screen and (min-width: 1366px) {
+    @content;
+  }
+}

@@ -1,0 +1,11 @@
+@import './variables.scss';
+
+.container {
+  max-width: 1276px;
+  margin: auto;
+  padding: 0px 45px;
+
+  @include screen-mobile-plus-and-smaller {
+    padding: 0px 20px;
+  }
+}

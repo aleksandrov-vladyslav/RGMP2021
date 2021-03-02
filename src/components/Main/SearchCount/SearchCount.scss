@@ -1,0 +1,11 @@
+@import '../../../styles/variables.scss';
+
+.search-count {
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+
+  &__number {
+    font-weight: bold;
+  }
+}

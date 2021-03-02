@@ -1,0 +1,53 @@
+@import '../../../../styles/variables.scss';
+
+.movie-card {
+  position: relative;
+  width: 350px;
+  margin-bottom: 50px;
+
+  &__image-wrapper {
+    margin-bottom: 15px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    color: $color-white;
+  }
+
+  &__genre {
+    color: $color-light-grey;
+  }
+
+  &__year {
+    padding: 5px 10px;
+    border: 1px solid $color-light-grey;
+    border-radius: 5px;
+    color: $color-white;
+  }
+
+  &:hover::after {
+    content: '•••';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0, 0.8);
+    transform: rotate(90deg);
+    font-size: 15px; 
+    letter-spacing: 4px;
+    margin-top: 2px;
+  }
+}
