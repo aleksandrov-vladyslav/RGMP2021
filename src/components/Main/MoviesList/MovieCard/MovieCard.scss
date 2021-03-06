@@ -2,8 +2,19 @@
 
 .movie-card {
   position: relative;
-  width: 350px;
   margin-bottom: 50px;
+
+  @include screen-mobile-plus-and-bigger {
+    width: calc(100% / 2 - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @include screen-tablet-portrait-and-bigger {
+    width: calc(100% / 3 - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
   &__image-wrapper {
     margin-bottom: 15px;

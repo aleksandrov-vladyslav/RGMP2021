@@ -1,6 +1,9 @@
 @import '../../../styles/variables.scss';
 
 .search {
+  margin: auto;
+  max-width: 1000px;
+
   &__title {
     color: white;
     text-align: left;
@@ -9,8 +12,13 @@
 
   &-form {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 40px;
+
+    @include screen-tablet-portrait-and-bigger {
+      flex-direction: row;
+    }
 
     &__input {
       margin-right: 20px;
@@ -24,6 +32,11 @@
 
     &__button {
       flex: 20% 0 0;
+      margin-top: 20px;
+
+      @include screen-tablet-portrait-and-bigger {
+        margin-top: 0;
+      }
     }
   }
 }
