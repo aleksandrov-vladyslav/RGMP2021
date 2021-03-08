@@ -1,0 +1,23 @@
+@import '../../../../../styles/variables.scss';
+
+.info-popup {
+  font-size: 18px;
+  color: $color-white;
+
+  &__button {
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-red;
+    }
+
+    &-close {
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      font-weight: bold;
+    }
+  }
+}

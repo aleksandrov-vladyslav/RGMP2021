@@ -25,10 +25,24 @@
   &--red {
     background-color: $color-red;
     color: $color-white;
+
+    &:hover {
+      filter:brightness(120%);
+    }
   }
 
   &--grey {
     background-color: rgba(255, 255, 255, 0.2);
     color: $color-red;
+  }
+
+  &--red-transparent {
+    background-color: transparent;
+    color: $color-red;
+    border: 1px solid $color-red;
+
+    &:hover {
+      filter:brightness(120%);
+    }
   }
 }

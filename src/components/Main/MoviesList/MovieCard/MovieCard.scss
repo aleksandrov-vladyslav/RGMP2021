@@ -42,9 +42,8 @@
     color: $color-white;
   }
 
-  &:hover::after {
-    content: '•••';
-    display: flex;
+  .movie-card__info-button {
+    display: none;
     justify-content: center;
     align-items: center;
     color: white;
@@ -60,5 +59,18 @@
     font-size: 15px; 
     letter-spacing: 4px;
     margin-top: 2px;
+  }
+
+  &:hover .movie-card__info-button {
+    display: flex;
+  }
+
+  &__info-popup {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 60%;
+    background-color: $color-dark-grey;
+    padding: 30px 0px 10px;
   }
 }
