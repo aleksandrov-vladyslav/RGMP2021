@@ -1,9 +1,22 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import Button from '../../common/Button/Button';
-import './DeleteMovieModal.scss';
 
 const DeleteMovieModal = (props) => {
+  const handleOutsideClick = event => {
+    if (!event.target.closest('.modal__content') && props.isDeleteModalOpen) {
+      props.toggleDeleteModal();
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  });
+
   return ( 
     <div className={`modal modal-delete ${props.isDeleteModalOpen ? 'visible' : 'hidden'}`}>
       <div className="modal__background"></div>

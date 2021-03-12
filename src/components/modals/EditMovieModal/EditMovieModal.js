@@ -1,8 +1,22 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import Button from '../../common/Button/Button';
 
 const EditMovieModal = (props) => {
+  const handleOutsideClick = event => {
+    if (!event.target.closest('.modal__content') && props.isEditModalOpen) {
+      props.toggleEditModal();
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  });
+
   return ( 
     <div className={`modal modal-edit ${props.isEditModalOpen ? 'visible' : 'hidden'}`}>
       <div className="modal__background"></div>
@@ -27,12 +41,12 @@ const EditMovieModal = (props) => {
           <input className="modal__form-input" type="text" defaultValue="Runtime text goes here" id="movie_runtime"></input>
         </form>
         <div className="modal__buttons">
-          <Button classList="modal__button modal-delete__confirm-button" 
+          <Button classList="modal__button modal-Edit__confirm-button" 
                   color="red-transparent" 
                   variant="big">
             Reset
           </Button>
-          <Button classList="modal__button modal-delete__confirm-button" 
+          <Button classList="modal__button modal-Edit__confirm-button" 
                   color="red" 
                   variant="big">
             Save

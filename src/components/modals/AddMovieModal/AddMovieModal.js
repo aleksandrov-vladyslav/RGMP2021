@@ -1,14 +1,28 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import Button from '../../common/Button/Button';
 
 const AddMovieModal = (props) => {
+  const handleOutsideClick = event => {
+    if (!event.target.closest('.modal__content') && props.isAddModalOpen) {
+      props.toggleAddModal();
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  });
+
   return ( 
-    <div className={`modal modal-edit ${props.isAddModalOpen ? 'visible' : 'hidden'}`}>
+    <div className={`modal modal-add ${props.isAddModalOpen ? 'visible' : 'hidden'}`}>
       <div className="modal__background"></div>
       <div className="modal__content">
         <h1 className="modal__title">ADD MOVIE</h1>
-        <form className="modal__form modal-edit__form">
+        <form className="modal__form modal-add__form">
           <label className="modal__form-label" htmlFor="movie_title">TITLE</label>
           <input className="modal__form-input" type="text" placeholder="Movie title here" id="movie_title"></input>
           <label className="modal__form-label" htmlFor="movie_date">RELEASE DATE</label>
