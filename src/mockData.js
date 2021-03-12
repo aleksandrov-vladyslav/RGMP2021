@@ -1297,9 +1297,3 @@ export const getGenres = () => {
 export const getMovieCount = () => {
   return data.movies.length;
 }
-
-export const getSortedMovies = (sortField, isAscending) => {
-  return data.movies.sort((a,b) => {
-    return isAscending ? a[sortField] - b[sortField] : b[sortField] - a[sortField]
-  })
-}

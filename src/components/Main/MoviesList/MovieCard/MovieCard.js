@@ -6,8 +6,6 @@ import InfoPopup from './InfoPopup/InfoPopup';
 import DeleteMovieModal from '../../../modals/DeleteMovieMoval/DeleteMovieModal';
 import EditMovieModal from '../../../modals/EditMovieModal/EditMovieModal';
 
-import {deleteMovie} from '../../../../mockData';
-
 class MovieCard extends Component {
   constructor(props) {
     super(props);
