@@ -6,6 +6,8 @@ import InfoPopup from './InfoPopup/InfoPopup';
 import DeleteMovieModal from '../../../modals/DeleteMovieMoval/DeleteMovieModal';
 import EditMovieModal from '../../../modals/EditMovieModal/EditMovieModal';
 
+import {deleteMovie} from '../../../../mockData';
+
 class MovieCard extends Component {
   constructor(props) {
     super(props);
@@ -59,7 +61,7 @@ class MovieCard extends Component {
               {this.props.title}
             </div>
             <div className="movie-card__genre">
-              {this.props.genre}
+              {this.props.genres.join(", ")}
             </div>
           </div>
           <div className="movie-card__year">
@@ -74,7 +76,7 @@ class MovieCard extends Component {
 MovieCard.propTypes = {
   img: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  genre: PropTypes.string.isRequired,
+  genres: PropTypes.array.isRequired,
   year: PropTypes.string.isRequired
 };
  

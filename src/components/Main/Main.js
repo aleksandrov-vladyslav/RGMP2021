@@ -13,7 +13,7 @@ const Main = () => {
     <div className="page-content__wrapper container">
       <Filter/>
       <ErrorBoundary>
-        <SearchCount count={39}/>
+        <SearchCount/>
         <MoviesList/>
       </ErrorBoundary>
     </div>

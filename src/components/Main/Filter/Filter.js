@@ -24,7 +24,11 @@ const Filter = () => {
       </ul>
       <div className="filter__select">
         <span className="filter__select-label">SORT BY</span>
-        <div className="filter__select-dropdown">RELEASE DATE</div>
+        <select className="filter__select-dropdown">
+          <option>RELEASE DATE</option>
+          <option>TITLE (A-Z)</option>
+          <option>TITLE (Z-A)</option>
+        </select>
       </div>
     </div> 
   );

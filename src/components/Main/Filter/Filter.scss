@@ -68,22 +68,15 @@
     }
 
     &-dropdown {
-      position: relative;
+      font-size: 16px;
       cursor: pointer;
       padding-right: 20px;
       color: $color-white;
+      background-color: transparent;
+      border: none;
 
-      &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 9px 5px 0 5px;
-        border-color: $color-red transparent transparent transparent;
+      option {
+        background-color: $color-dark-grey;
       }
     }
   }
