@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <>
-      <Header headerMovieId={headerMovieId}/>
+      <Header setHeaderMovieId={setHeaderMovieId} headerMovieId={headerMovieId}/>
       <Main setHeaderMovieId={setHeaderMovieId} />
       <Footer />
     </>

@@ -17,16 +17,15 @@ const MovieCard = (props) => {
   }
 
   const toggleDeleteModal = () => {
-    setIsDeleteModalOpen(!IsDeleteModalOpen);
+    setIsDeleteModalOpen(!isDeleteModalOpen);
   }
 
   const toggleEditModal = () => {
-    setIsEditModalOpen(!IsEditModalOpen);
+    setIsEditModalOpen(!isEditModalOpen);
   }
 
   return ( 
-    // onClick = {() => {setHeaderMovieId(movieData.id)}}
-    <div className="movie-card" >
+    <div className="movie-card">
       <EditMovieModal movieData={props.movieData} toggleEditModal={toggleEditModal} isEditModalOpen={isEditModalOpen} />
       <DeleteMovieModal toggleDeleteModal={toggleDeleteModal} isDeleteModalOpen={isDeleteModalOpen}/>
       <div className="movie-card__info-button" onClick={toggleInfoPopup}>•••</div>
@@ -36,7 +35,7 @@ const MovieCard = (props) => {
         toggleDeleteModal = { toggleDeleteModal }
         toggleEditModal = { toggleEditModal } 
       />
-      <div className="movie-card__image-wrapper">
+      <div className="movie-card__image-wrapper" onClick = {() => {props.setHeaderMovieId(props.movieData.id)}}>
         <img className="movie-card__image" src={props.movieData.posterurl} />
       </div>
       <div className="movie-card__info">

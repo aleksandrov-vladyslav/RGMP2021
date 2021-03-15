@@ -43,7 +43,7 @@ export const data = {
         ],
         "poster": "MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_SY500_CR0,0,300,500_AL_.jpg",
         "contentRating": "15",
-        "duration": "PT134M",
+        "duration": "134 min",
         "releaseDate": "2018-02-14",
         "averageRating": 0,
         "originalTitle": "",
@@ -100,7 +100,7 @@ export const data = {
         ],
         "poster": "MV5BYWMxYWVjNzAtMTY0YS00YWQyLWExMGItMjUxODkwYzQyNzMwXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_SY500_CR0,0,300,500_AL_.jpg",
         "contentRating": "PG",
-        "duration": "PT89M",
+        "duration": "89 min",
         "releaseDate": "2018-03-23",
         "averageRating": 0,
         "originalTitle": "Early Man",
@@ -157,7 +157,7 @@ export const data = {
         ],
         "poster": "MV5BMjI1NTk0NTc1OV5BMl5BanBnXkFtZTgwNTMwMTE4NDM@._V1_SY500_CR0,0,300,500_AL_.jpg",
         "contentRating": "",
-        "duration": "PT157M",
+        "duration": "157 min",
         "releaseDate": "2018-02-16",
         "averageRating": 0,
         "originalTitle": "",
@@ -213,7 +213,7 @@ export const data = {
         ],
         "poster": "MV5BYThiMjg4ZDAtNjk5ZS00ZTUxLThmM2ItMGI0ZTE1NjRhNWNmXkEyXkFqcGdeQXVyNTQ3MjE4NTU@._V1_SY500_CR0,0,300,500_AL_.jpg",
         "contentRating": "PG-13",
-        "duration": "",
+        "duration": "143 min",
         "releaseDate": "2018-02-16",
         "averageRating": 0,
         "originalTitle": "",
@@ -268,7 +268,7 @@ export const data = {
         ],
         "poster": "MV5BMzU3ODQ3MzQ5Nl5BMl5BanBnXkFtZTgwMDQwMDIzNDM@._V1_SY500_CR0,0,300,500_AL_.jpg",
         "contentRating": "R",
-        "duration": "PT127M",
+        "duration": "127 min",
         "releaseDate": "2017-06-01",
         "averageRating": 0,
         "originalTitle": "Nelyubov",
@@ -325,7 +325,7 @@ export const data = {
         ],
         "poster": "MV5BMTg5NjUyMzAyOV5BMl5BanBnXkFtZTgwMTU4Njk2NDM@._V1_SY500_CR0,0,300,500_AL_.jpg",
         "contentRating": "",
-        "duration": "PT107M",
+        "duration": "107 min",
         "releaseDate": "2017-05-26",
         "averageRating": 0,
         "originalTitle": "",
@@ -381,7 +381,7 @@ export const data = {
         ],
         "poster": "MV5BMTYwMTU5MzY4NF5BMl5BanBnXkFtZTgwNTY2NTkxNDM@._V1_SY500_CR0,0,300,500_AL_.jpg",
         "contentRating": "11",
-        "duration": "PT71M",
+        "duration": "71 min",
         "releaseDate": "2018-01-05",
         "averageRating": 0,
         "originalTitle": "",
@@ -438,7 +438,7 @@ export const data = {
         ],
         "poster": "MV5BNjZiNzgzNjUtOWE0Ni00MWFmLTliZDEtNWRkMzc5ZTA2MWM1XkEyXkFqcGdeQXVyNDExMzMxNjE@._V1_SY500_CR0,0,300,500_AL_.jpg",
         "contentRating": "PG-13",
-        "duration": "PT91M",
+        "duration": "91 min",
         "releaseDate": "2018-02-16",
         "averageRating": 0,
         "originalTitle": "",
@@ -1287,7 +1287,7 @@ export const data = {
         ],
         "poster": "MV5BNGNiNWQ5M2MtNGI0OC00MDA2LWI5NzEtMmZiYjVjMDEyOWYzXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_SY500_CR0,0,300,500_AL_.jpg",
         "contentRating": "15",
-        "duration": "PT123M",
+        "duration": "123 min",
         "releaseDate": "2018-02-14",
         "averageRating": 0,
         "originalTitle": "",
@@ -1319,4 +1319,8 @@ export const getGenres = () => {
 
 export const getMovieCount = () => {
   return data.movies.length;
+}
+
+export const getMovieById = id => {
+  return data.movies.filter(movie => movie.id === id)[0]
 }

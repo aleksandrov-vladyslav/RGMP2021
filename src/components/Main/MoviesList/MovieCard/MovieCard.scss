@@ -3,6 +3,7 @@
 .movie-card {
   position: relative;
   margin-bottom: 50px;
+  cursor: pointer;
 
   @include screen-mobile-plus-and-bigger {
     width: calc(100% / 2 - 40px);

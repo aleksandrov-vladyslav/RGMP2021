@@ -4,4 +4,12 @@
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+
+  .page-header:not(.is--search) &__add-movie-button {
+    display: none;
+  }
+
+  .page-header:not(.is--details) &__back-to-search-button {
+    display: none;
+  }
 }
