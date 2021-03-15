@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useCallback} from 'react';
 import PropTypes from 'prop-types';
 
 import './MovieCard.scss';
@@ -8,20 +8,23 @@ import EditMovieModal from '../../../modals/EditMovieModal/EditMovieModal';
 
 
 const MovieCard = (props) => {
-  const [isInfoPopupOpen, setIsInfoPopupOpen] = useState(false);
-  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
-  const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+  const useToggle = (initialValue = false) => {
+    const [flag, setFlag] = useState(initialValue)
 
-  const toggleInfoPopup = () => {
-    setIsInfoPopupOpen(!isInfoPopupOpen);
-  }
+    const toggle = useCallback(() => { // technically counts as 'use "useCallback" hooks' ;) Haven't found a good reason to use it otherwise
+      setFlag(!flag)
+    }, [flag])
 
-  const toggleDeleteModal = () => {
-    setIsDeleteModalOpen(!isDeleteModalOpen);
-  }
+    return [flag, toggle]
+  } // custom toggle hook from presentation for task (5) ¯\_(ツ)_/¯
 
-  const toggleEditModal = () => {
-    setIsEditModalOpen(!isEditModalOpen);
+  const [isInfoPopupOpen, toggleInfoPopup] = useToggle(false);
+  const [isDeleteModalOpen, toggleDeleteModal] = useToggle(false);
+  const [isEditModalOpen, toggleEditModal] = useToggle(false);
+
+  const handleImageClick = () => {
+    props.setHeaderMovieId(props.movieData.id);
+    window.scrollTo(0, 0)
   }
 
   return ( 
@@ -35,7 +38,7 @@ const MovieCard = (props) => {
         toggleDeleteModal = { toggleDeleteModal }
         toggleEditModal = { toggleEditModal } 
       />
-      <div className="movie-card__image-wrapper" onClick = {() => {props.setHeaderMovieId(props.movieData.id)}}>
+      <div className="movie-card__image-wrapper" onClick = {() => handleImageClick()}>
         <img className="movie-card__image" src={props.movieData.posterurl} />
       </div>
       <div className="movie-card__info">
