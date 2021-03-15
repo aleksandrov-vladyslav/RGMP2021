@@ -4,6 +4,10 @@
   margin: auto;
   max-width: 1000px;
 
+  .page-header:not(.is--search) & {
+    display: none;
+  }
+
   &__title {
     color: white;
     text-align: left;

@@ -4,7 +4,7 @@
   position: relative;
   overflow: hidden;
   border-bottom: 10px solid $color-light-grey;
-  height: 400px;
+  min-height: 400px;
 
   &__background {
     position: absolute;

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
 import './MovieCard.scss';
@@ -6,76 +6,58 @@ import InfoPopup from './InfoPopup/InfoPopup';
 import DeleteMovieModal from '../../../modals/DeleteMovieMoval/DeleteMovieModal';
 import EditMovieModal from '../../../modals/EditMovieModal/EditMovieModal';
 
-class MovieCard extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { 
-      isInfoPopupOpen: false,
-      isDeleteModalOpen: false,
-      isEditModalOpen: false
-    }
 
-    this.toggleInfoPopup = this.toggleInfoPopup.bind(this);
-    this.toggleDeleteModal = this.toggleDeleteModal.bind(this);
-    this.toggleEditModal = this.toggleEditModal.bind(this);
+const MovieCard = (props) => {
+  const [isInfoPopupOpen, setIsInfoPopupOpen] = useState(false);
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+
+  const toggleInfoPopup = () => {
+    setIsInfoPopupOpen(!isInfoPopupOpen);
   }
 
-  toggleInfoPopup() {
-    this.setState({
-      isInfoPopupOpen: !this.state.isInfoPopupOpen
-    });
+  const toggleDeleteModal = () => {
+    setIsDeleteModalOpen(!IsDeleteModalOpen);
   }
 
-  toggleDeleteModal() {
-    this.setState({
-      isDeleteModalOpen: !this.state.isDeleteModalOpen
-    });
+  const toggleEditModal = () => {
+    setIsEditModalOpen(!IsEditModalOpen);
   }
 
-  toggleEditModal() {
-    this.setState({
-      isEditModalOpen: !this.state.isEditModalOpen
-    });
-  }
-
-  render() { 
-    return ( 
-      <div className="movie-card">
-        <EditMovieModal toggleEditModal={this.toggleEditModal} isEditModalOpen={this.state.isEditModalOpen} />
-        <DeleteMovieModal toggleDeleteModal={this.toggleDeleteModal} isDeleteModalOpen={this.state.isDeleteModalOpen}/>
-        <div className="movie-card__info-button" onClick={this.toggleInfoPopup}>•••</div>
-        <InfoPopup 
-          isInfoPopupOpen = {this.state.isInfoPopupOpen} 
-          toggleInfoPopup = { this.toggleInfoPopup }
-          toggleDeleteModal = { this.toggleDeleteModal }
-          toggleEditModal = { this.toggleEditModal } 
-        />
-        <div className="movie-card__image-wrapper">
-          <img className="movie-card__image" src={this.props.img} />
-        </div>
-        <div className="movie-card__info">
-          <div>
-            <div className="movie-card__title">
-              {this.props.title}
-            </div>
-            <div className="movie-card__genre">
-              {this.props.genres.join(", ")}
-            </div>
+  return ( 
+    // onClick = {() => {setHeaderMovieId(movieData.id)}}
+    <div className="movie-card" >
+      <EditMovieModal movieData={props.movieData} toggleEditModal={toggleEditModal} isEditModalOpen={isEditModalOpen} />
+      <DeleteMovieModal toggleDeleteModal={toggleDeleteModal} isDeleteModalOpen={isDeleteModalOpen}/>
+      <div className="movie-card__info-button" onClick={toggleInfoPopup}>•••</div>
+      <InfoPopup 
+        isInfoPopupOpen = {isInfoPopupOpen} 
+        toggleInfoPopup = { toggleInfoPopup }
+        toggleDeleteModal = { toggleDeleteModal }
+        toggleEditModal = { toggleEditModal } 
+      />
+      <div className="movie-card__image-wrapper">
+        <img className="movie-card__image" src={props.movieData.posterurl} />
+      </div>
+      <div className="movie-card__info">
+        <div>
+          <div className="movie-card__title">
+            {props.movieData.title}
           </div>
-          <div className="movie-card__year">
-            {this.props.year}
+          <div className="movie-card__genre">
+            {props.movieData.genres.join(", ")}
           </div>
         </div>
-      </div> 
-    );
-  }
+        <div className="movie-card__year">
+          {props.movieData.year}
+        </div>
+      </div>
+    </div> 
+  );
 }
 
 MovieCard.propTypes = {
-  img: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  genres: PropTypes.array.isRequired,
-  year: PropTypes.string.isRequired
+  movieData: PropTypes.object.isRequired,
 };
  
 export default MovieCard;

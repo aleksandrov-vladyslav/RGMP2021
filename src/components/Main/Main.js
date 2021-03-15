@@ -9,7 +9,7 @@ import './Main.scss';
 
 import {data} from '../../mockData';
 
-const Main = () => {
+const Main = props => {
   const [moviesData, setMoviesData] = useState(data.movies);
   
   return ( 
@@ -18,7 +18,7 @@ const Main = () => {
       <Filter setMoviesData={setMoviesData} />
       <ErrorBoundary>
         <SearchCount/>
-        <MoviesList moviesData={moviesData} />
+        <MoviesList moviesData={moviesData} setHeaderMovieId={props.setHeaderMovieId} />
       </ErrorBoundary>
     </div>
   </div> 

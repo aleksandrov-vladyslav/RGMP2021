@@ -53,6 +53,7 @@ export const data = {
             "Michael B. Jordan",
             "Lupita Nyong'o"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 7.0,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -109,6 +110,7 @@ export const data = {
             "Eddie Redmayne",
             "Maisie Williams"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 6.3,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYWMxYWVjNzAtMTY0YS00YWQyLWExMGItMjUxODkwYzQyNzMwXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -165,6 +167,7 @@ export const data = {
             "Sidharth Malhotra",
             "Naseeruddin Shah"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": "",
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjI1NTk0NTc1OV5BMl5BanBnXkFtZTgwNTMwMTE4NDM@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -220,6 +223,7 @@ export const data = {
             "Billy Zane",
             "Taylor James"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 5.0,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYThiMjg4ZDAtNjk5ZS00ZTUxLThmM2ItMGI0ZTE1NjRhNWNmXkEyXkFqcGdeQXVyNTQ3MjE4NTU@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -274,6 +278,7 @@ export const data = {
             "Aleksey Rozin",
             "Matvey Novikov"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 7.8,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzU3ODQ3MzQ5Nl5BMl5BanBnXkFtZTgwMDQwMDIzNDM@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -330,6 +335,7 @@ export const data = {
             "J\u00e9r\u00e9mie Renier",
             "Jacqueline Bisset"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 6.2,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg5NjUyMzAyOV5BMl5BanBnXkFtZTgwMTU4Njk2NDM@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -385,6 +391,7 @@ export const data = {
             "Kristin Scott Thomas",
             "Patricia Clarkson"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 6.7,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwMTU5MzY4NF5BMl5BanBnXkFtZTgwNTY2NTkxNDM@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -441,6 +448,7 @@ export const data = {
             "Matthew Shear",
             "Deirdre O'Connell"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 6.9,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjZiNzgzNjUtOWE0Ni00MWFmLTliZDEtNWRkMzc5ZTA2MWM1XkEyXkFqcGdeQXVyNDExMzMxNjE@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -495,6 +503,7 @@ export const data = {
             "Shinelle Azoroh",
             "Annalise Basso"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 6.6,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYTc0MjI4YTktY2NkYi00YzgwLWIxNDItYWIyNjAwMWNlMGUzXkEyXkFqcGdeQXVyNDY2MjcyOTQ@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -550,6 +559,7 @@ export const data = {
             "Josh Hartnett",
             "Kaho Minami"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 6.8,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzMjcwMDExOV5BMl5BanBnXkFtZTgwMjU4Njk2NDM@._V1_SY377_CR0,0,300,500_AL_.jpg"
     },
@@ -605,6 +615,7 @@ export const data = {
             "Jasmina Ali",
             "Rozita Assadollahy"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 7.1,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZDM0OTZlOWQtZGU0My00MmIxLTk0N2ItMjU3OGY0ODRlODYxXkEyXkFqcGdeQXVyNTQ0NjIwNDU@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -661,6 +672,7 @@ export const data = {
             "William Feng",
             "Zanilia Zhao"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": "",
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDM1MzZjNDUtNDBmMC00M2M5LTg0NDQtN2ExMjQ1Zjc0ZTE0XkEyXkFqcGdeQXVyNjMyMDA1ODM@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -717,6 +729,7 @@ export const data = {
             "Sayaka Maeda",
             "Takashi Fujii"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 7.9,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzFlMDI1ZjctMzgzYy00YmVkLTlmMTMtNDZmZmVmMzk3MzNhXkEyXkFqcGdeQXVyMTA1OTEwNjE@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -771,6 +784,7 @@ export const data = {
             "Reinhardt Wetrek",
             "Syuleyman Alilov Letifov"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 7.2,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZDRkZGUxZmEtZDdiZC00NGJmLWFiODAtN2RiMzY3ODhjNTNmXkEyXkFqcGdeQXVyMTg5MDEyNw@@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -827,6 +841,7 @@ export const data = {
             "Jamie Dornan",
             "Eric Johnson"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 4.2,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxOTQ1MzI0Nl5BMl5BanBnXkFtZTgwMzgwMzIxNDM@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -883,6 +898,7 @@ export const data = {
             "Fayssal Bazzi",
             "Domhnall Gleeson"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 6.1,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk5NzI0ODUwN15BMl5BanBnXkFtZTgwOTIxNjA0NDM@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -939,6 +955,7 @@ export const data = {
             "Anthony Sadler",
             "Spencer Stone"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 5.1,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY0NjUzNjYwOV5BMl5BanBnXkFtZTgwMzY1MDM0NDM@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -995,6 +1012,7 @@ export const data = {
             "Michelle Williams",
             "Zac Efron"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 8.0,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYjQ0ZWJkYjMtYjJmYS00MjJiLTg3NTYtMmIzN2E2Y2YwZmUyXkEyXkFqcGdeQXVyNjk5NDA3OTk@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -1051,6 +1069,7 @@ export const data = {
             "Ki Hong Lee",
             "Kaya Scodelario"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 6.9,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYyNzk3MDc2NF5BMl5BanBnXkFtZTgwMDk3OTM1NDM@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -1107,6 +1126,7 @@ export const data = {
             "Sarah Snook",
             "Finn Scicluna-O'Prey"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 5.3,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjI2OWE5OGItMTE4Yi00ZmIzLThjZDctNTU1OTMxMTc3Yjg4XkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -1163,6 +1183,7 @@ export const data = {
             "Tom Hanks",
             "Sarah Paulson"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 7.4,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjQyMjEwOTIwNV5BMl5BanBnXkFtZTgwOTkzNTMxNDM@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -1219,6 +1240,7 @@ export const data = {
             "Rosamund Pike",
             "Ava Cooper"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 7.3,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY500_CR0,0,300,500_AL_.jpg"
     },
@@ -1275,6 +1297,7 @@ export const data = {
             "Octavia Spencer",
             "Michael Shannon"
         ],
+        "overview": "Tarantino wrote Pulp Fiction in 1992 and 1993, incorporating scenes that Avary originally wrote for True Romance (1993)[citation needed]. Its plot occurs out of chronological order. The film is also self-referential from its opening moments, beginning with a title card that gives two dictionary definitions of pulp. Considerable screen time is devoted to monologues and casual conversations with eclectic dialogue revealing each character's perspectives on several subjects, and the film features an ironic combination of humor and strong violence. TriStar Pictures reportedly turned down the script as too demented. Then Miramax co-chairman Harvey Weinstein was enthralled, however, and the film became the first that Miramax fully financed.",
         "imdbRating": 7.8,
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNGNiNWQ5M2MtNGI0OC00MDA2LWI5NzEtMmZiYjVjMDEyOWYzXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_SY500_CR0,0,300,500_AL_.jpg"
     }
