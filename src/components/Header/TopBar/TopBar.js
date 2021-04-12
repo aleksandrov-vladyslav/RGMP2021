@@ -23,7 +23,7 @@ const TopBar = props => {
       <SiteLogo/>
       <Button classList="top-bar__add-movie-button" variant="medium" color="grey" onClick={toggleAddModal}>+ ADD MOVIE</Button>
       <Button classList="top-bar__back-to-search-button" variant="medium" color="grey" onClick={() => toggleHeaderView()}> back to search</Button>
-      <AddMovieModal toggleAddModal={toggleAddModal} isAddModalOpen={isAddModalOpen} />
+      {isAddModalOpen && <AddMovieModal toggleAddModal={toggleAddModal} />}
     </div>
   );
 }

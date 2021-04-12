@@ -29,8 +29,8 @@ const MovieCard = (props) => {
 
   return ( 
     <div className="movie-card">
-      <EditMovieModal movieData={props.movieData} toggleEditModal={toggleEditModal} isEditModalOpen={isEditModalOpen} />
-      <DeleteMovieModal toggleDeleteModal={toggleDeleteModal} isDeleteModalOpen={isDeleteModalOpen}/>
+      {isEditModalOpen && <EditMovieModal movieData={props.movieData} toggleEditModal={toggleEditModal} />}
+      {isDeleteModalOpen && <DeleteMovieModal toggleDeleteModal={toggleDeleteModal}/>}
       <div className="movie-card__info-button" onClick={toggleInfoPopup}>•••</div>
       <InfoPopup 
         isInfoPopupOpen = {isInfoPopupOpen} 
