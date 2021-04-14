@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { Link, Route, Switch } from "react-router-dom";
+
 import './TopBar.scss';
 
 import SiteLogo from '../../common/SiteLogo/SiteLogo';
@@ -13,16 +15,19 @@ const TopBar = props => {
     setIsAddModalOpen(!isAddModalOpen)
   }
 
-  const toggleHeaderView = () => {
-    props.setHeaderView('search');
-    props.setHeaderMovieId(0);
-  }
-
   return ( 
     <div className="top-bar">
       <SiteLogo/>
-      <Button classList="top-bar__add-movie-button" variant="medium" color="grey" onClick={toggleAddModal}>+ ADD MOVIE</Button>
-      <Button classList="top-bar__back-to-search-button" variant="medium" color="grey" onClick={() => toggleHeaderView()}> back to search</Button>
+      <Switch>
+        <Route exact path='/movies'>
+          <Button classList="top-bar__add-movie-button" variant="medium" color="grey" onClick={toggleAddModal}>+ ADD MOVIE</Button>
+        </Route>
+        <Route exact path="/movies/film/:id">
+          <Button classList="top-bar__back-to-search-button" variant="medium" color="grey">
+            <Link to="/movies"> back to search</Link>
+          </Button>
+        </Route>
+      </Switch>
       {isAddModalOpen && <AddMovieModal toggleAddModal={toggleAddModal} />}
     </div>
   );

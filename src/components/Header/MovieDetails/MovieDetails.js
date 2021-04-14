@@ -7,8 +7,8 @@ const MovieDetails = props => {
   const [headerMovieData, setHeaderMovieData] = useState({});
 
   useEffect(() => {
-    setHeaderMovieData(getMovieById(props.headerMovieId));
-  }, [props.headerMovieId]);
+    setHeaderMovieData(getMovieById(props.match.params.id));
+  }, [props.match.params.id]);
 
   return ( 
     <div className="movie-details" id="movie-details">

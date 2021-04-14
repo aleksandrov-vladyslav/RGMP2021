@@ -1,5 +1,6 @@
 import React, {useState, useCallback} from 'react';
 import PropTypes from 'prop-types';
+import { useHistory } from "react-router-dom";
 
 import './MovieCard.scss';
 import InfoPopup from './InfoPopup/InfoPopup';
@@ -8,6 +9,8 @@ import EditMovieModal from '../../../modals/EditMovieModal/EditMovieModal';
 
 
 const MovieCard = (props) => {
+  let history = useHistory();
+
   const useToggle = (initialValue = false) => {
     const [flag, setFlag] = useState(initialValue)
 
@@ -25,6 +28,7 @@ const MovieCard = (props) => {
   const handleImageClick = () => {
     props.setHeaderMovieId(props.movieData.id);
     window.scrollTo(0, 0)
+    history.push("/movies/film/" + props.movieData.id);
   }
 
   return ( 
