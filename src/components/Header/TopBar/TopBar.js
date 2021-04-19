@@ -19,13 +19,13 @@ const TopBar = props => {
     <div className="top-bar">
       <SiteLogo/>
       <Switch>
-        <Route exact path='/movies'>
-          <Button classList="top-bar__add-movie-button" variant="medium" color="grey" onClick={toggleAddModal}>+ ADD MOVIE</Button>
-        </Route>
         <Route exact path="/movies/film/:id">
           <Button classList="top-bar__back-to-search-button" variant="medium" color="grey">
             <Link to="/movies"> back to search</Link>
           </Button>
+        </Route>
+        <Route path="/movies">
+          <Button classList="top-bar__add-movie-button" variant="medium" color="grey" onClick={toggleAddModal}>+ ADD MOVIE</Button>
         </Route>
       </Switch>
       {isAddModalOpen && <AddMovieModal toggleAddModal={toggleAddModal} />}

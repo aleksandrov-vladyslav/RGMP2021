@@ -15,8 +15,6 @@ import Footer from './Footer/Footer'
 import NotFound from './NotFound/NotFound';
 
 const App = () => {
-  const [headerMovieId, setHeaderMovieId] = useState(0);
-
   return (
     <Router>
       <Switch>
@@ -25,8 +23,8 @@ const App = () => {
           path='/movies'
           render={(props) => (
             <>
-              <Header {...props} setHeaderMovieId={setHeaderMovieId} headerMovieId={headerMovieId} />
-              <Main {...props} setHeaderMovieId={setHeaderMovieId} />
+              <Header {...props} />
+              <Main {...props} />
             </>
           )}
         />

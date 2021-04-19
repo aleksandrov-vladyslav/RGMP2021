@@ -26,7 +26,6 @@ const MovieCard = (props) => {
   const [isEditModalOpen, toggleEditModal] = useToggle(false);
 
   const handleImageClick = () => {
-    props.setHeaderMovieId(props.movieData.id);
     window.scrollTo(0, 0)
     history.push("/movies/film/" + props.movieData.id);
   }

@@ -1324,3 +1324,14 @@ export const getMovieCount = () => {
 export const getMovieById = id => {
   return data.movies.filter(movie => movie.id === id)[0]
 }
+
+export const getSearchResults = searchTerm => {
+  let searchTermNormal = searchTerm.toLowerCase();
+  return data.movies.filter(movie => {
+    if (movie.title.toLowerCase().includes(searchTermNormal) || movie.storyline.toLowerCase().includes(searchTermNormal)) {
+      return true;
+    }
+
+    return false;
+  })
+}

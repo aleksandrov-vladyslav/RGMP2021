@@ -1,14 +1,23 @@
 import React, {useEffect, useState} from 'react';
+import { useHistory } from "react-router-dom";
 
 import './MovieDetails.scss';
 import {getMovieById} from '../../../mockData';
 
 const MovieDetails = props => {
+  let history = useHistory();
+  
   const [headerMovieData, setHeaderMovieData] = useState({});
 
+  let movieId = props.match?.params.id || 0;
+
   useEffect(() => {
-    setHeaderMovieData(getMovieById(props.match.params.id));
-  }, [props.match.params.id]);
+    if (movieId) {
+      setHeaderMovieData(getMovieById(movieId));
+    } else {
+      history.push('/movies');
+    }
+  }, [movieId]);
 
   return ( 
     <div className="movie-details" id="movie-details">

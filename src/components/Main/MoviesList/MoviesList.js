@@ -11,7 +11,6 @@ const MoviesList = props => {
         return <MovieCard
           key={movieData.id}
           movieData={movieData}
-          setHeaderMovieId={props.setHeaderMovieId}
           />
       })}
     </div> 

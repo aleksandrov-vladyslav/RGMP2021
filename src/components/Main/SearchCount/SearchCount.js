@@ -2,13 +2,16 @@ import React from 'react';
 
 import './SearchCount.scss';
 
-import {getMovieCount} from '../../../mockData';
-
-const SearchCount = () => {
+const SearchCount = ({searchCount}) => {
   return ( 
     <div className="search-count">
-      <span className="search-count__number">{getMovieCount()}</span>
-      <span className="search-count__label"> movies found</span>
+      {searchCount !== 0 && 
+        <>
+          <span className="search-count__number">{searchCount}</span>
+          <span className="search-count__label"> movies found</span>
+        </>
+      }
+      {searchCount === 0 && <p className="search-count__no-result">No Movies Found</p>}
     </div> 
   );
 }

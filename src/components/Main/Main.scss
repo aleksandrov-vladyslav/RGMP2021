@@ -3,4 +3,9 @@
 .page-content {
   background-color: $color-dark-grey;
   min-height: calc(100vh - 60px);
+
+  &__empty-message {
+    margin-top: 40px;
+    text-align: center;
+  }
 }
