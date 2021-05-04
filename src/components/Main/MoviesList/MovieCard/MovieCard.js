@@ -33,7 +33,7 @@ const MovieCard = (props) => {
   return ( 
     <div className="movie-card">
       {isEditModalOpen && <EditMovieModal movieData={props.movieData} toggleEditModal={toggleEditModal} />}
-      {isDeleteModalOpen && <DeleteMovieModal toggleDeleteModal={toggleDeleteModal}/>}
+      {isDeleteModalOpen && <DeleteMovieModal movieId={props.movieData.id} toggleDeleteModal={toggleDeleteModal}/>}
       <div className="movie-card__info-button" onClick={toggleInfoPopup}>•••</div>
       <InfoPopup 
         isInfoPopupOpen = {isInfoPopupOpen} 
@@ -42,7 +42,7 @@ const MovieCard = (props) => {
         toggleEditModal = { toggleEditModal } 
       />
       <div className="movie-card__image-wrapper" onClick = {() => handleImageClick()}>
-        <img className="movie-card__image" src={props.movieData.posterurl} />
+        <img className="movie-card__image" src={props.movieData.poster_path} />
       </div>
       <div className="movie-card__info">
         <div>
@@ -54,7 +54,7 @@ const MovieCard = (props) => {
           </div>
         </div>
         <div className="movie-card__year">
-          {props.movieData.year}
+          {props.movieData.release_date.split('-')[0]}
         </div>
       </div>
     </div> 

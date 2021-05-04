@@ -1,10 +1,13 @@
 import React, {useState} from 'react';
 import Button from '../../common/Button/Button';
 import { useHistory } from "react-router-dom";
+import { connect } from 'react-redux';
+
+import { searchMovies} from '../../../redux/actions';
 
 import './Search.scss';
 
-const Search = () => {
+const Search = props => {
   let history = useHistory();
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -15,6 +18,7 @@ const Search = () => {
 
   const searchButtonHandler = () => {
     history.push("/movies/search?" + searchTerm);
+    props.searchMovies(searchTerm);
   }
   
   return ( 
@@ -32,5 +36,12 @@ const Search = () => {
   </div> 
   );
 }
- 
-export default Search;
+
+const mapDispatchToProps = {
+  searchMovies
+};
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(Search);

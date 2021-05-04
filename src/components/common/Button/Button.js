@@ -8,7 +8,7 @@ const Button = (props) => {
   let className = classList + ' button button--' + props.variant + ' button--' + props.color;
 
   return ( 
-  <button className={className} onClick={props.onClick}>
+  <button className={className} onClick={props.onClick} type={props.type ? props.type : ''}>
     {props.children}
   </button> );
 }
@@ -17,7 +17,8 @@ Button.propTypes = {
   classList: PropTypes.string,
   color: PropTypes.string.isRequired,
   variant: PropTypes.string.isRequired,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  type: PropTypes.string
 };
  
 export default Button;

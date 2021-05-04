@@ -1,43 +1,47 @@
-import React, {useEffect, useState} from 'react';
-import { useHistory } from "react-router-dom";
+import React, {useEffect} from 'react';
+import { connect } from 'react-redux';
+
+import { searchMovieById } from '../../../redux/actions';
 
 import './MovieDetails.scss';
-import {getMovieById} from '../../../mockData';
 
 const MovieDetails = props => {
-  let history = useHistory();
-  
-  const [headerMovieData, setHeaderMovieData] = useState({});
-
-  let movieId = props.match?.params.id || 0;
+  let movieId = props.match.params.id;
 
   useEffect(() => {
-    if (movieId) {
-      setHeaderMovieData(getMovieById(movieId));
-    } else {
-      history.push('/movies');
-    }
+    props.searchMovieById(movieId)
   }, [movieId]);
 
   return ( 
     <div className="movie-details" id="movie-details">
       <div className="movie-details__image-container">
-        <img className="movie-details__image" src={headerMovieData?.posterurl} />
+        <img className="movie-details__image" src={props.selectedMovie.poster_path} />
       </div>
       <div className="movie-details__content">
         <div className="movie-details__title">
-          <h1 className="movie-details__title-text">{headerMovieData?.title}</h1>
-          <div className="movie-details__rating">{headerMovieData?.imdbRating}</div>
+          <h1 className="movie-details__title-text">{props.selectedMovie.title}</h1>
+          <div className="movie-details__rating">{props.selectedMovie.vote_average}</div>
         </div>
         <p className="movie-details__oscar">Oscar winning Movie</p>
         <div className="movie-details__time">
-          <p className="movie-details__year">{headerMovieData?.year}</p>
-          <p className="movie-details__duration">{headerMovieData?.duration}</p>
+          <p className="movie-details__year">{props.selectedMovie.release_date && props.selectedMovie.release_date.split('-')[0]}</p>
+          <p className="movie-details__duration">{props.selectedMovie.runtime} min</p>
         </div>
-        <p className="movie-details__overview">{headerMovieData?.overview}</p>
+        <p className="movie-details__overview">{props.selectedMovie.overview}</p>
       </div>
     </div> 
   );
 }
  
-export default MovieDetails;
+const mapStateToProps = ({ selectedMovie }) => ({
+  selectedMovie
+});
+
+const mapDispatchToProps = {
+  searchMovieById
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(MovieDetails);

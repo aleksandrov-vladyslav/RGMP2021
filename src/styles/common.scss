@@ -76,8 +76,6 @@
   }
 
   &__form {
-    margin-bottom: 60px;
-
     &-label {
       font-size: 18px;
       display: block;
@@ -99,6 +97,10 @@
         padding-left: 0;
         background-color: transparent;
       }
+    }
+
+    &-select {
+      height: 60px;
     }
   }
 }

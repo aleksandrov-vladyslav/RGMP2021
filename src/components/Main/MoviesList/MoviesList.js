@@ -1,20 +1,31 @@
 import React from 'react';
 import MovieCard from './MovieCard/MovieCard';
+import { connect } from 'react-redux';
 
+import SearchCount from './SearchCount/SearchCount';
 import './MoviesList.scss';
 
 const MoviesList = props => {
 
-  return ( 
-    <div className="movies-list">
-      {props.moviesData.map(movieData => {
-        return <MovieCard
-          key={movieData.id}
-          movieData={movieData}
-          />
-      })}
-    </div> 
+  return (
+    <>
+      <SearchCount searchCount = {props.movies.length}/>
+      <div className="movies-list">
+        {props.movies.map(movie => {
+          return <MovieCard
+            key={movie.id}
+            movieData={movie}
+            />
+        })}
+      </div> 
+    </>
   );
 }
  
-export default MoviesList;
+const mapStateToProps = ({ movies }) => ({
+  movies
+});
+
+export default connect(
+  mapStateToProps
+)(MoviesList);

@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   HashRouter as Router,
   Route,
   Switch,
   Redirect
 } from "react-router-dom";
+import { Provider } from 'react-redux';
+import store from '../redux/store';
 
 import '../styles/index.scss';
 import './App.scss';
@@ -16,24 +18,26 @@ import NotFound from './NotFound/NotFound';
 
 const App = () => {
   return (
-    <Router>
-      <Switch>
-        <Redirect exact from="/" to="/movies" />
-        <Route
-          path='/movies'
-          render={(props) => (
-            <>
-              <Header {...props} />
-              <Main {...props} />
-            </>
-          )}
-        />
-        <Route path="*">
-          <NotFound />
-        </Route>
-      </Switch>
-      <Footer />
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Switch>
+          <Redirect exact from="/" to="/movies" />
+          <Route
+            path='/movies'
+            render={(props) => (
+              <>
+                <Header {...props} />
+                <Main {...props} />
+              </>
+            )}
+          />
+          <Route path="*">
+            <NotFound />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
+    </Provider>
   );
 }
 
