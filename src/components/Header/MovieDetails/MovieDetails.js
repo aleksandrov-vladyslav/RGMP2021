@@ -20,7 +20,7 @@ const MovieDetails = props => {
       <div className="movie-details__content">
         <div className="movie-details__title">
           <h1 className="movie-details__title-text">{props.selectedMovie.title}</h1>
-          <div className="movie-details__rating">{props.selectedMovie.vote_average}</div>
+          <div className="movie-details__rating">{props.selectedMovie.vote_average || 'N/A'}</div>
         </div>
         <p className="movie-details__oscar">Oscar winning Movie</p>
         <div className="movie-details__time">

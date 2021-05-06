@@ -23,7 +23,7 @@
   left: 0;
   top: 0;
   z-index: 99;
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
 
   &__background {
@@ -37,6 +37,8 @@
   &__content {
     position: relative;
     max-width: 600px;
+    max-height: calc(100vh - 50px);
+    overflow: auto;
     margin: 50px auto 0;
     padding: 40px;
     background: $color-dark-grey;
@@ -99,8 +101,13 @@
       }
     }
 
-    &-select {
-      height: 60px;
+    &-error {
+      color: red;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 20px;
+      }
     }
   }
 }
