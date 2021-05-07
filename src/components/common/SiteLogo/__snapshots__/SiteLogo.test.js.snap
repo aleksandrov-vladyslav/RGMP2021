@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SiteLogo render SiteLogo snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="site-logo"
+  >
+    <span
+      class="site-logo__bold"
+    >
+      netflix
+    </span>
+    <span>
+       roulette
+    </span>
+  </div>
+</DocumentFragment>
+`;
