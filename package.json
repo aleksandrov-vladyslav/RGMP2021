@@ -1,23 +1,28 @@
 {
   "name": "rgmp2021",
-  "jest":{
+  "jest": {
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less|scss|sass)$": "identity-obj-proxy"
     },
     "testRegex": "/*.test.js$",
     "collectCoverage": true,
-    "coverageReporters": ["lcov"],
+    "coverageReporters": [
+      "lcov"
+    ],
     "coverageDirectory": "test-coverage",
     "coverageThreshold": {
-    "global": {
-      "branches": 0,
-      "functions": 0,
-      "lines": 0,
-      "statements": 0
-    }
+      "global": {
+        "branches": 0,
+        "functions": 0,
+        "lines": 0,
+        "statements": 0
+      }
     },
-    "moduleDirectories": ["node_modules", "src"]
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
   },
   "version": "1.0.0",
   "description": "",
@@ -26,12 +31,17 @@
     "start": "webpack serve --open --env NODE_ENV=dev",
     "build:dev": "webpack --env NODE_ENV=dev",
     "build:prod": "webpack --env NODE_ENV=prod",
-    "test": "jest"
+    "test": "jest",
+    "nextdev": "next dev",
+    "nextbuild": "next build",
+    "nextstart": "next start"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "formik": "^2.2.6",
+    "next": "^10.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",

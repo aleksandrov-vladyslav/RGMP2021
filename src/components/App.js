@@ -23,7 +23,7 @@ const App = () => {
         <Switch>
           <Redirect exact from="/" to="/movies" />
           <Route
-            path='/movies'
+            exact path={['/movies', '/movies/search', '/movies/film/:id']}
             render={(props) => (
               <>
                 <Header {...props} />
